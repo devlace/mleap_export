@@ -5,9 +5,9 @@ version := "0.1"
 scalaVersion := "2.11.8"
 
 
-libraryDependencies += "ml.combust.mleap" %% "mleap-runtime" % "0.10.0"
-libraryDependencies += "ml.combust.mleap" %% "mleap-core" % "0.10.0"
-libraryDependencies += "ml.combust.mleap" %% "mleap-spark" % "0.10.0"
+libraryDependencies += "ml.combust.mleap" %% "mleap-runtime" % "0.12.0"
+libraryDependencies += "ml.combust.mleap" %% "mleap-core" % "0.12.0"
+libraryDependencies += "ml.combust.mleap" %% "mleap-spark" % "0.12.0"
 
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "2.3.0" % "provided",
