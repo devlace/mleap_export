@@ -16,6 +16,8 @@ class LengthCounter(override val uid: String,
   with HasInputCol
   with HasOutputCol {
   def this(model: LengthCounterModel) = this(uid = Identifiable.randomUID("length_counter"), model = model)
+  def this() = this(uid = Identifiable.randomUID("length_counter"), model = new LengthCounterModel())
+  def this(uid: String) = this(model = new LengthCounterModel())
 
   def setInputCol(value: String): this.type = set(inputCol, value)
   def setOutputCol(value: String): this.type = set(outputCol, value)
